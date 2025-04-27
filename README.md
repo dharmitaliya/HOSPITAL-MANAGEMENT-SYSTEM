@@ -1,102 +1,46 @@
-🏥 Nandita Hospital Management System
-A full-stack MERN (MongoDB, Express.js, React.js, Node.js) based Hospital Management System designed for efficient patient management and smooth hospital operations.
+# 🏥 Nandita Hospital Management System
 
-🚀 Project Overview
-This system has three major components:
+A full-stack **MERN** (MongoDB, Express.js, React.js, Node.js) based Hospital Management System designed for efficient patient management and smooth hospital operations.
 
-Frontend: For normal users (patients and visitors).
+---
 
-Dashboard: For Admin use only (manages hospital operations).
+## 🚀 Project Overview
 
-Backend: Handles API requests, stores all data in MongoDB Atlas.
+This system includes:
+- **Frontend**: For normal users (patients and visitors).
+- **Dashboard**: For Admin use only (manage doctors, appointments, messages).
+- **Backend**: Handles API requests, stores data in **MongoDB Atlas**.
 
-👥 User Roles
-There are three types of users:
+---
 
+## 👥 User Roles
 
-User Type	Features
-Patient	Can register, login, view doctors, and book appointments after login.
-Doctor	Added and managed by Admin.
-Admin	Can login to the dashboard, manage doctors across different branches, view all appointments, and manage users/messages.
-✅ Even non-logged-in visitors can send a message, but appointments require patient login.
+- **Patient**: Can register, login, view doctors, and book appointments after login.
+- **Doctor**: Added and managed by Admin only.
+- **Admin**: Can log into the Dashboard and manage doctors, appointments, and users.
 
-🏗️ Major Features
-🏥 Hospital Name: Nandita Hospital
+> **Note:** Visitors who are not logged in can still send messages, but can only book appointments after logging in as a patient.
 
-🛠️ Admin Dashboard:
+---
 
-Admin login (only Admins can access Dashboard)
+## ✨ Features
 
-Add / Remove Doctors in different branches
+- Hospital Name: **Nandita Hospital**
+- Secure Admin login and Dashboard
+- Patients can view doctors and book appointments
+- Admin can add/remove doctors in different branches
+- Messaging system (open to all visitors)
+- All data (users, appointments, doctors, messages) stored securely in **MongoDB Atlas**
 
-Manage Appointments, Users, and Messages
+---
 
-👨‍⚕️ Patients/Users:
+## 🛠️ Tech Stack
 
-User Registration & Login
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB Atlas
 
-View Doctor Listings
+---
 
-Book Appointments (after login)
+## 📂 Project Structure
 
-Send messages (without login)
-
-🛢️ Database:
-
-All Users, Appointments, Messages, and Doctor data are stored securely in MongoDB Atlas.
-
-🛠️ Tech Stack
-
-Frontend	Backend	Database
-React.js	Node.js, Express.js	MongoDB Cluster (Atlas)
-📂 Project Structure
-lua
-Copy
-Edit
-/Frontend    --> User Interface for Patients & Visitors
-/Backend     --> Server, API Routes, and MongoDB integration
-/Dashboard   --> Admin Panel for Hospital Management
-🔥 How to Run Locally
-Clone the repo:
-
-bash
-Copy
-Edit
-git clone https://github.com/dharmitaliya/HOSPITAL-MANAGEMENT-SYSTEM.git
-Navigate into folders and install dependencies:
-
-bash
-Copy
-Edit
-cd Backend
-npm install
-
-cd ../Frontend
-npm install
-
-cd ../Dashboard
-npm install
-Set up environment variables (MongoDB URI, etc.).
-
-Start Backend:
-
-bash
-Copy
-Edit
-npm run server
-Start Frontend:
-
-bash
-Copy
-Edit
-npm start
-Start Dashboard:
-
-bash
-Copy
-Edit
-npm start
-📧 Contact
-For any queries or support, feel free to connect.
-
-🙌 Thank you for visiting Nandita Hospital's Management System!
