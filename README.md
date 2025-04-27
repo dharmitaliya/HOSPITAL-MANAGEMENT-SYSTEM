@@ -64,58 +64,14 @@ This system includes:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/dharmitaliya/HOSPITAL-MANAGEMENT-SYSTEM.git
-Install dependencies
+2. **Install dependencies**
+   backend
+   ```bash
+   cd Backend
+   npm install
+
 
 Backend:
-
-bash
-Copy
-Edit
-cd Backend
-npm install
-Frontend:
-
-bash
-Copy
-Edit
-cd ../Frontend
-npm install
-Dashboard:
-
-bash
-Copy
-Edit
-cd ../Dashboard
-npm install
-Set up environment variables
-
-Inside the Backend folder, create a .env file:
-
-ini
-Copy
-Edit
-MONGODB_URI=your-mongodb-cluster-uri
-JWT_SECRET=your-jwt-secret
-Start the servers
-
-Backend:
-
-bash
-Copy
-Edit
-npm run server
-Frontend:
-
-bash
-Copy
-Edit
-npm start
-Dashboard:
-
-bash
-Copy
-Edit
-npm start
 📧 Contact
 For any queries or suggestions, feel free to connect.
 
