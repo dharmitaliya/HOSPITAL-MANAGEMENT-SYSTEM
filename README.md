@@ -17,7 +17,10 @@ This system includes:
 
 - **Patient**: Can register, login, view doctors, and book appointments after login.
 - **Doctor**: Added and managed by Admin only.
-- **Admin**: Can log into the Dashboard and manage doctors, appointments, and users.
+- **Admin**: 
+  - Can log into the Dashboard.
+  - Manage doctors, appointments, users, and messages.
+  - Can add new Admins (promote other users to Admin role).
 
 > **Note:** Visitors who are not logged in can still send messages, but can only book appointments after logging in as a patient.
 
@@ -25,7 +28,6 @@ This system includes:
 
 ## ✨ Features
 
-- Hospital Name: **Nandita Hospital**
 - Secure Admin login and Dashboard
 - Patients can view doctors and book appointments
 - Admin can add/remove doctors in different branches
@@ -44,18 +46,40 @@ This system includes:
 
 ## 🖼️ Screenshots
 
-> Upload your screenshots inside a folder named `/screenshots` in your repo, and replace the below links.
-
 ### 🧑‍⚕️ Patient Frontend
-![Patient Frontend View](./screenshots/patient-frontend.png)
+- **Home**
+![home](https://github.com/user-attachments/assets/85e78083-088a-4345-978b-a04525c5ad21)
+- **Apoointment**
+![screencapture-localhost-5173-appointment-2025-04-27-22_34_57](https://github.com/user-attachments/assets/41bd8ba6-48d2-4e5d-941c-a549eaac103e)
+- **About Us**
+![about us](https://github.com/user-attachments/assets/7ffd9a11-05dc-406b-a8f8-244baf6e3386)
+- **Registration**
+![registraion](https://github.com/user-attachments/assets/4749bcad-5f2a-4405-bd45-d1a4d38942f3)
+- **Login**
+![image](https://github.com/user-attachments/assets/511bec52-2f29-49a8-9e95-7e503972d546)
 
 ### 🛠️ Admin Dashboard
-![Admin Dashboard View](./screenshots/admin-dashboard.png)
+- **Login**
+![image](https://github.com/user-attachments/assets/cf9fe8ab-ea36-44e3-a018-75c52d51170f)
+- **Dashboard**
+![image](https://github.com/user-attachments/assets/2fa3cb8f-e248-4ab4-83cc-cece23702434)
+- **Doctors**
+![image](https://github.com/user-attachments/assets/c2584924-2f26-400c-88b0-594cc38b8905)
+- **New Admin**
+![image](https://github.com/user-attachments/assets/3900ce94-f31d-4806-9ed4-351c4cd4061e)
+- **New Doctor**
+![new doctor](https://github.com/user-attachments/assets/631fa4c6-60bd-46d8-9e5f-145c8ead1f83)
+- **Messages**
+![image](https://github.com/user-attachments/assets/b8526595-ff4f-4c69-80f2-3abfb1945fd2)
+
 
 ---
 
 ## 📂 Project Structure
 
+- /Frontend --> User Interface (Patients & Visitors) 
+- /Backend --> Server-side (APIs, Database connection) 
+- /Dashboard --> Admin Panel (Hospital Management) 
 
 ---
 
@@ -65,14 +89,41 @@ This system includes:
    ```bash
    git clone https://github.com/dharmitaliya/HOSPITAL-MANAGEMENT-SYSTEM.git
 2. **Install dependencies**
-   backend
+   <br>
+   - Backend:
+      ```bash
+      cd Backend
+      npm install
+   - Frontend:
+     ```bash
+     cd ../Frontend
+     npm install
+   - Dashboard:
+     ```bash
+     cd ../Dashboard
+     npm install
+3. **Set up environment variables** <br>
+Inside the Backend folder, create a .env file and add:
    ```bash
-   cd Backend
-   npm install
+   MONGODB_URI=your-mongodb-cluster-uri
+   JWT_SECRET=your-jwt-secret
+4. **Start the servers**<br>
+   - Backend Server:
+      ```bash
+      npm run dev
+   - Frontend :
+     ```bash
+     npm run dev
+   - Dashboard :
+     ```bash
+     npm run dev 
 
+---
 
-Backend:
-📧 Contact
-For any queries or suggestions, feel free to connect.
+## 📧 Contact <br>
+For any queries or suggestions, feel free to connect. <br>
+Email: [dharm.italiya5151@gmail.com](dharm.italiya5151@gmail.com)  LinkedIn: [Dharm Italiya](https://www.linkedin.com/in/dharm-italiya/)
 
-##🙌 Thank you for visiting Nandita Hospital Management System!
+---
+
+## 🙌 Thank you for visiting Nandita Hospital Management System!
