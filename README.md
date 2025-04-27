@@ -106,7 +106,17 @@ This system includes:
 Inside the Backend folder, create a .env file and add:
    ```bash
    MONGODB_URI=your-mongodb-cluster-uri
-   JWT_SECRET=your-jwt-secret
+   JWT_SECRET_KEY=your-jwt-secret
+   PORT=4000
+   FRONTEND_URL=http://localhost:5173
+   DASHBOARD_URL=http://localhost:5174
+   JWT_EXPIRES=7d
+   COOKIE_EXPIRE=7
+   CLOUDINARY_CLOUD_NAME=your-cloud-name
+   CLOUDINARY_API_SECRET=your-api-secret
+   CLOUDINARY_API_KEY=your-api-key
+
+CLOUDINARY_API_KEY=299154468946774
 4. **Start the servers**<br>
    - Backend Server:
       ```bash
